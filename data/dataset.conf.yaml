@@ -1,0 +1,12 @@
+dataset_source:
+  'npz'
+#  'planetoid'
+# Random seed (for reproducibility).
+seed: 0
+# standardize_graph use largest_connected_component as graph
+train_config:
+  split:
+    train_examples_per_class: 5   # 20
+    val_examples_per_class: 30
+    test_size: null
+  standardize_graph: True
