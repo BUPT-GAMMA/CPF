@@ -9,17 +9,14 @@ The official code of WWW2021 paper: Extract the Knowledge of Graph Neural Networ
 - Python version >= 3.6
 - PyTorch version >= 1.7.1
 - DGL
+- Optuna (optional)
 
 ## Usage
 
 ### Quick start
 
-2. use `python train_dgl.py --dataset=XXX --teacher=XXX`  to run teacher model.
-2. use `python spawn_worker.py --dataset=XXX --teacher=XXX ` to run student model, we provide our hyper-parameters setting as reported in our paper, and an AutoML version for hyper-parameters search.
-
-### AutoML
-
-Our code supports Optuna to search best hyper-parameters for knowledge distillation. You can use `hyper.py`  to run Optuna code.
+1. use `python train_dgl.py --dataset=XXX --teacher=XXX`  to run teacher model.
+2. use `python spawn_worker.py --dataset=XXX --teacher=XXX ` to run student model, we provide our hyper-parameters setting as reported in our paper, and an AutoML version for hyper-parameters search. (Our code supports Optuna to search best hyper-parameters for knowledge distillation. You can use `--automl`  to run Optuna code.)
 
 ## Add your own datasets
 
