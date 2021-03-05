@@ -46,7 +46,8 @@ Please cite our paper if you use this code in your own work:
 @inproceedings{yang2021extract,
   title={Extract the Knowledge of Graph Neural Networks and Go Beyond it: An Effective Knowledge Distillation Framework},
   author={Cheng Yang and Jiawei Liu and Chuan Shi},
-  booktitle={WWW},
+  booktitle={Proceedings of The Web Conference 2021 (WWW ’21)},
+  publisher={ACM},
   year={2021}
 }
 ```
