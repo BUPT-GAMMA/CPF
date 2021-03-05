@@ -43,13 +43,11 @@ There are some results on GCN teacher model, with different datasets and student
 Please cite our paper if you use this code in your own work:
 
 ```
-@misc{yang2021extract,
-      title={Extract the Knowledge of Graph Neural Networks and Go Beyond it: An Effective Knowledge Distillation Framework}, 
-      author={Cheng Yang and Jiawei Liu and Chuan Shi},
-      year={2021},
-      eprint={2103.02885},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@inproceedings{yang2021extract,
+  title={Extract the Knowledge of Graph Neural Networks and Go Beyond it: An Effective Knowledge Distillation Framework},
+  author={Cheng Yang and Jiawei Liu and Chuan Shi},
+  booktitle={WWW},
+  year={2021}
 }
 ```
 
