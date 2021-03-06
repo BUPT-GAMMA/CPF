@@ -1,0 +1,13 @@
+scipy==1.5.2
+ogb==1.2.6
+optuna==2.4.0
+networkx==2.5
+dgl_cu100==0.5.2
+torch==1.7.1
+cogdl==0.2.0.post1
+numpy==1.19.2
+tabulate==0.8.7
+tqdm==4.51.0
+dgl==0.6.0
+PyYAML==5.4.1
+scikit_learn==0.24.1
