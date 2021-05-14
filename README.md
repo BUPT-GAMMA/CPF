@@ -1,7 +1,11 @@
 # CPF
 
 The official code of WWW2021 paper: Extract the Knowledge of Graph Neural Networks and Go Beyond it: An Effective Knowledge Distillation Framework
-
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-amz-computers)](https://paperswithcode.com/sota/node-classification-on-amz-computers?p=extract-the-knowledge-of-graph-neural)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-amz-photo)](https://paperswithcode.com/sota/node-classification-on-amz-photo?p=extract-the-knowledge-of-graph-neural)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-citeseer)](https://paperswithcode.com/sota/node-classification-on-citeseer?p=extract-the-knowledge-of-graph-neural)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-cora)](https://paperswithcode.com/sota/node-classification-on-cora?p=extract-the-knowledge-of-graph-neural)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-pubmed)](https://paperswithcode.com/sota/node-classification-on-pubmed?p=extract-the-knowledge-of-graph-neural)
 ## Getting Started
 
 ### Requirements
