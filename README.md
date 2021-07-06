@@ -60,8 +60,6 @@ There are some results on GCN teacher model, with different datasets and student
 
 ## Benchmark Rankings
 
-## Benchmark Rankings
-
 |                          Benchmark                           | Model         | Acc    | layer | emb_dim | feat_drop | attn_drop | lr   | wd   |
 | :----------------------------------------------------------: | ------------- | ------ | ----- | ------- | --------- | --------- | ---- | ---- |
 | [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-cora-with-public-split)](https://paperswithcode.com/sota/node-classification-on-cora-with-public-split?p=extract-the-knowledge-of-graph-neural) | CPF-ind-APPNP | 85.2%  | 5     | 16      | 0.2       | 0.8       | 1e-3 | 5e-4 |
