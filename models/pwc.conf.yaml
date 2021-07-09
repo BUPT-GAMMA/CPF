@@ -1,0 +1,76 @@
+# global configurations
+global:
+  max_epoch: 500
+  patience: 50
+  # Disables CUDA training.
+  no_cuda: False
+  # Validate during training pass.
+  fastmode: False
+  # divide test data into two parts
+  div_test: False
+  seed: 0
+  # Weight of distillation loss
+  loss_alpha: 0.1
+  optimizer: 'Adam'
+  ground: False
+
+# specific configurations of each model
+GAT:
+  num_layers: 2
+  hidden: 16
+  dropout: 0.5
+  att_dropout: 0.5
+  negative_slope: 0.1
+  alpha: 0.2
+  learning_rate: 0.005
+  weight_decay: 0.01
+  temp: 1.0
+  num_heads: 8
+  att: True
+  layer_flag: False
+APPNP:
+  cora:
+    hiddenunits: 256
+    feat_drop: 0.2
+    edge_drop: 0.2
+    alpha: 0.1
+    k: 10
+    drop_prob: 0.5
+    niter: 10
+    reg_lambda: 5e-3
+    learning_rate: 0.0005
+    weight_decay: 0.01
+    att: False
+    layer_flag: False
+  citeseer:
+    hiddenunits: 256
+    feat_drop: 0.2
+    edge_drop: 0.2
+    alpha: 0.1
+    k: 10
+    drop_prob: 0.5
+    niter: 10
+    reg_lambda: 5e-3
+    learning_rate: 0.0005
+    weight_decay: 0.01
+    att: False
+    layer_flag: False
+GCNII:
+  cora:
+    learning_rate: 0.001
+    wd1: 0.01
+    wd2: 0.0005
+    layer: 16
+    hidden: 64
+    dropout: 0.6
+    alpha: 0.1
+    lamda: 0.5
+  pubmed:
+    learning_rate: 0.001
+    wd1: 0.01
+    wd2: 0.0005
+    layer: 64
+    hidden: 512
+    dropout: 0.5
+    alpha: 0.1
+    lamda: 0.4
