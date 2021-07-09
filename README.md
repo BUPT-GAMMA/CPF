@@ -2,8 +2,6 @@
 
 The official code of WWW2021 paper: Extract the Knowledge of Graph Neural Networks and Go Beyond it: An Effective Knowledge Distillation Framework
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-cora-with-public-split)](https://paperswithcode.com/sota/node-classification-on-cora-with-public-split?p=extract-the-knowledge-of-graph-neural)
-
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-cora-fixed-10-node-per)](https://paperswithcode.com/sota/node-classification-on-cora-fixed-10-node-per)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-cora-fixed-5-node-per)](https://paperswithcode.com/sota/node-classification-on-cora-fixed-5-node-per)
@@ -14,13 +12,15 @@ The official code of WWW2021 paper: Extract the Knowledge of Graph Neural Networ
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-cora-05)](https://paperswithcode.com/sota/node-classification-on-cora-05)
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-citeseer-with-public)](https://paperswithcode.com/sota/node-classification-on-citeseer-with-public?p=extract-the-knowledge-of-graph-neural)
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-pubmed-with-public)](https://paperswithcode.com/sota/node-classification-on-pubmed-with-public?p=extract-the-knowledge-of-graph-neural)
-
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-amz-computers)](https://paperswithcode.com/sota/node-classification-on-amz-computers?p=extract-the-knowledge-of-graph-neural)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-amz-photo)](https://paperswithcode.com/sota/node-classification-on-amz-photo?p=extract-the-knowledge-of-graph-neural)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-cora-with-public-split)](https://paperswithcode.com/sota/node-classification-on-cora-with-public-split?p=extract-the-knowledge-of-graph-neural)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-citeseer-with-public)](https://paperswithcode.com/sota/node-classification-on-citeseer-with-public?p=extract-the-knowledge-of-graph-neural)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-pubmed-with-public)](https://paperswithcode.com/sota/node-classification-on-pubmed-with-public?p=extract-the-knowledge-of-graph-neural)
 
 ## Getting Started
 
@@ -60,18 +60,26 @@ There are some results on GCN teacher model, with different datasets and student
 
 ## Benchmark Rankings
 
+There are results use several models run on different benchmark datasets. Our experiments settings are available in the following form and the `pwc.conf.yaml` file. For simple usage, please try AutoML for hyper-parameters search.
+
+Note: 
+
+- Remember to change the load data function to load_citation when running public split benchmarks. 
+- Use original load data function when running AMZ datasets, remember to slice the test sets to corresponding size.
+
 |                          Benchmark                           | Model         | Acc    | layer | emb_dim | feat_drop | attn_drop | lr   | wd   |
 | :----------------------------------------------------------: | ------------- | ------ | ----- | ------- | --------- | --------- | ---- | ---- |
-| [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-cora-with-public-split)](https://paperswithcode.com/sota/node-classification-on-cora-with-public-split?p=extract-the-knowledge-of-graph-neural) | CPF-ind-APPNP | 85.2%  | 5     | 16      | 0.2       | 0.8       | 1e-3 | 5e-4 |
 | [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-cora-fixed-10-node-per)](https://paperswithcode.com/sota/node-classification-on-cora-fixed-10-node-per) | CPF-tra-GCNII | 84.1%  | 6     | 16      | 0.2       | 0.5       | 5e-3 | 1e-2 |
 | [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-cora-fixed-5-node-per)](https://paperswithcode.com/sota/node-classification-on-cora-fixed-5-node-per) | CPF-tra-APPNP | 80.26% | 8     | 32      | 0.2       | 0.2       | 5e-3 | 5e-4 |
 | [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-cora-3)](https://paperswithcode.com/sota/node-classification-on-cora-3) | CPF-tra-GCNII | 84.18% | 9     | 8       | 0.5       | 0.8       | 5e-3 | 1e-2 |
 | [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-cora-1)](https://paperswithcode.com/sota/node-classification-on-cora-1) | CPF-ind-APPNP | 80.24% | 8     | 16      | 0.8       | 0.2       | 5e-3 | 1e-2 |
 | [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-cora-05)](https://paperswithcode.com/sota/node-classification-on-cora-05) | CPF-ind-APPNP | 77.3%  | 7     | 32      | 0.8       | 0.2       | 1e-3 | 1e-3 |
-| [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-citeseer-with-public)](https://paperswithcode.com/sota/node-classification-on-citeseer-with-public?p=extract-the-knowledge-of-graph-neural) | CPF-tra-APPNP | 74.6%  | 8     | 16      | 0.8       | 0.5       | 1e-3 | 1e-2 |
-| [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-pubmed-with-public)](https://paperswithcode.com/sota/node-classification-on-pubmed-with-public?p=extract-the-knowledge-of-graph-neural) | CPF-tra-GCNII | 83.2%  | 8     | 16      | 0.8       | 0.8       | 1e-2 | 5e-4 |
 | [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-amz-computers)](https://paperswithcode.com/sota/node-classification-on-amz-computers?p=extract-the-knowledge-of-graph-neural) | CPF-ind-GAT   | 85.5%  | 8     | 16      | 0.2       | 0.5       | 1e-3 | 1e-2 |
 | [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-amz-photo)](https://paperswithcode.com/sota/node-classification-on-amz-photo?p=extract-the-knowledge-of-graph-neural) | CPF-ind-GAT   | 94.1%  | 9     | 32      | 0.5       | 0.5       | 1e-2 | 1e-2 |
+| [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-cora-with-public-split)](https://paperswithcode.com/sota/node-classification-on-cora-with-public-split?p=extract-the-knowledge-of-graph-neural) | CPF-ind-APPNP | 85.3%  | 10    | 64      | 0.8       | 0.8       | 5e-3 | 5e-4 |
+| [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-citeseer-with-public)](https://paperswithcode.com/sota/node-classification-on-citeseer-with-public?p=extract-the-knowledge-of-graph-neural) | CPF-ind-APPNP | 74.6%  | 6     | 64      | 0.5       | 0.5       | 5e-3 | 1e-2 |
+| [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/extract-the-knowledge-of-graph-neural/node-classification-on-pubmed-with-public)](https://paperswithcode.com/sota/node-classification-on-pubmed-with-public?p=extract-the-knowledge-of-graph-neural) | CPF-tra-GCNII | 83.2%  | 8     | 16      | 0.8       | 0.8       | 1e-2 | 5e-4 |
+
 ## Cite
 
 Please cite our paper if you use this code in your own work:
